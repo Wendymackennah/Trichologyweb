@@ -1,22 +1,27 @@
 
+// src/App.js
 import React from 'react';
-import { CssBaseline, Container, Box } from '@mui/material';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
+import HeroSection from './components/HeroSection';
+import JourneySection from './components/JourneySection';
+import ConfidenceSection from './components/ConfidenceSection';
+import WhyWomenTrustSection from './components/WhyWomenTrustSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import FAQSection from './components/FAQSection';
+import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <CssBaseline />
       <Header />
-      <Container maxWidth="lg">
-        <Hero />
-        <Box my={8}>
-          <Services />
-        </Box>
-      </Container>
+      <HeroSection />
+      <JourneySection />
+      <ConfidenceSection />
+      <WhyWomenTrustSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <CTASection />
       <Footer />
     </>
   );
